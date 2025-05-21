@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlurryWorld - Майнкрафт сервер</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>  
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <div><img src="/static/images/icon.jpg" class="logo-icon"></div>
+                <div class="text-two">Flurry</div><div class="logo-text">World</div>
+            </a>
+            <button class="mobile-menu-btn">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link">Главная</a></li>
+                    <li><a href="#shop" class="nav-link">Магазин</a></li>
+                    <li><a href="#about" class="nav-link">О сервере</a></li>
+                    <li><a href="#" class="nav-link">Правила</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Добро пожаловать на <span>FlurryWorld</span></h1>
+                <p>Исследуйте бескрайний мир, создавайте шедевры и станьте частью нашего дружного сообщества. Уникальные режимы и регулярные обновления не дадут вам заскучать!</p>
+                <button class="ip-btn" onclick="copyIP()">Наш IP: play.flurryworld.net</button>
+        </div>
+        </div>
+        <div class="container hero-stats">
+            <div class="stat-card">
+                <h3>2500+</h3>
+                <p>Активных игроков</p>
+            </div>
+            <div class="stat-card">
+                <h3>4</h3>
+                <p>Игровых режима</p>
+            </div>
+            <div class="stat-card">
+                <h3>99.9%</h3>
+                <p>Аптайм серверов</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop-section" id="shop">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наш магазин</h2>
+                <p>Выберите категорию товаров и найдите то, что вам необходимо для комфортной игры</p>
+            </div>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="privileges">Привилегии</button>
+                <button class="tab-btn" data-tab="keys">Ключи</button>
+                <button class="tab-btn" data-tab="services">Услуги</button>
+                <button class="tab-btn" data-tab="bundles">Наборы</button>
+                <div class="tabs-indicator"></div>
+            </div>
+
+            <!-- Privileges Tab -->
+            <div class="tab-content active" id="privileges">
+                <div class="product-card">
+                    <div class="product-img"><img src="/static/images/immortal.png"></div>
+                    <div class="product-info">
+                        <h3>Immortal</h3>
+                        <p>Базовая привилегия с доступом к /kit vip, цветному чату и телепортации</p>
+                        <div class="product-price">
+                            <div class="price">199 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">PREMIUM</div>
+                    <div class="product-info">
+                        <h3>Premium</h3>
+                        <p>Включает все возможности VIP + доступ к fly-режиму и эксклюзивным предметам</p>
+                        <div class="product-price">
+                            <div class="price">399 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">DELUXE</div>
+                    <div class="product-info">
+                        <h3>Deluxe</h3>
+                        <p>Максимальные преимущества, включая вход на полный сервер и custom префикс</p>
+                        <div class="product-price">
+                            <div class="price">699 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Keys Tab -->
+            <div class="tab-content" id="keys">
+                <div class="product-card">
+                    <div class="product-img">🔑</div>
+                    <div class="product-info">
+                        <h3>Обычный ключ</h3>
+                        <p>Открывает обычный кейс с шансом получить редкие предметы и ресурсы</p>
+                        <div class="product-price">
+                            <div class="price">99 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">🔑</div>
+                    <div class="product-info">
+                        <h3>Редкий ключ</h3>
+                        <p>Открывает редкий кейс с возможностью получить ценное снаряжение</p>
+                        <div class="product-price">
+                            <div class="price">249 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">🔑</div>
+                    <div class="product-info">
+                        <h3>Легендарный ключ</h3>
+                        <p>Открывает легендарный кейс с эксклюзивными предметами</p>
+                        <div class="product-price">
+                            <div class="price">499 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">🔑</div>
+                    <div class="product-info">
+                        <h3>Набор ключей</h3>
+                        <p>10 обычных ключей со скидкой</p>
+                        <div class="product-price">
+                            <div class="price">799 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Tab -->
+            <div class="tab-content" id="services">
+                <div class="product-card">
+                    <div class="product-img">🏠</div>
+                    <div class="product-info">
+                        <h3>Доп. регионы</h3>
+                        <p>Расширение приватной территории для строительства</p>
+                        <div class="product-price">
+                            <div class="price">149 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">📊</div>
+                    <div class="product-info">
+                        <h3>Перенос данных</h3>
+                        <p>Перенос вашего инвентаря и прогресса между серверами</p>
+                        <div class="product-price">
+                            <div class="price">349 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">✨</div>
+                    <div class="product-info">
+                        <h3>Персональный префикс</h3>
+                        <p>Создайте уникальный префикс для выделения в чате</p>
+                        <div class="product-price">
+                            <div class="price">299 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bundles Tab -->
+            <div class="tab-content" id="bundles">
+                <div class="product-card">
+                    <div class="product-img">📦</div>
+                    <div class="product-info">
+                        <h3>Стартовый набор</h3>
+                        <p>VIP + 5 обычных ключей + набор инструментов</p>
+                        <div class="product-price">
+                            <div class="price">599 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">📦</div>
+                    <div class="product-info">
+                        <h3>Набор строителя</h3>
+                        <p>Premium + доп. регионы + эксклюзивные блоки</p>
+                        <div class="product-price">
+                            <div class="price">899 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">📦</div>
+                    <div class="product-info">
+                        <h3>Ультимативный набор</h3>
+                        <p>Deluxe + все ключи + все услуги в одном комплекте</p>
+                        <div class="product-price">
+                            <div class="price">1499 ₽</div>
+                            <button class="btn btn-sm">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>О нашем сервере</h2>
+                    <p>FlurryWorld - это уникальный сервер, созданный с любовью для игроков, которые ценят качество, стабильность и комфортную игру. Наша команда постоянно работает над улучшением игрового опыта и добавлением новых возможностей.</p>
+                    <p>Присоединяйтесь к нам сегодня и станьте частью растущего сообщества увлеченных игроков!</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-text">
+                                <h4>Мощное оборудование</h4>
+                                <p>Серверы работают без лагов</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🛡️</div>
+                            <div class="feature-text">
+                                <h4>Защита от гриферов</h4>
+                                <p>Ваши постройки в безопасности</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">👥</div>
+                            <div class="feature-text">
+                                <h4>Дружное комьюнити</h4>
+                                <p>Найдите новых друзей</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🔄</div>
+                            <div class="feature-text">
+                                <h4>Регулярные обновления</h4>
+                                <p>Всегда новый контент</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <section class="footerr" id="contact">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <div class="logo footer-logo">
+                            <div><img src="/static/images/icon.jpg" class="logo-icon"></div>
+                            <div class="logo-text">Flurry<span>World</span></div>
+                        </div>
+                        <p>Присоединяйтесь к тысячам игроков на нашем сервере и погрузитесь в увлекательный мир FlurryWorld. Мы создаем лучший опыт для каждого игрока!</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><img src="images/vk.svg" class="social-icon"></a>
+                            <a href="#" class="social-link"><img src="images/tg.svg" class="social-icon"></a>
+                            <a href="#" class="social-link"><img src="images/discord.svg" class="social-icon"></a>
+                        </div>
+                        <p class="author">© FlurryWorld 2025 Все права защищены</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
